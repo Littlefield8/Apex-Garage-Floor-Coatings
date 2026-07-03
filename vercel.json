@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.apexgaragefloorcoatings.com"
+        }
+      ],
+      "destination": "https://apexgaragefloorcoatings.com/:path*",
+      "permanent": true
+    }
+  ]
+}
