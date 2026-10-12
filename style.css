@@ -267,3 +267,14 @@ footer.site ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 9p
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ---------- sticky mobile call bar ---------- */
+.callbar { display: none; }
+@media (max-width: 680px) {
+  body { padding-bottom: 64px; }   /* room for sticky call bar */
+  .callbar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 60; }
+  .callbar a { flex: 1; text-align: center; padding: 16px; text-decoration: none;
+               font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: 1rem; }
+  .callbar .c-call { background: var(--steel); color: #fff; }
+  .callbar .c-quote { background: var(--graphite); color: #fff; }
+}
